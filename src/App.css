@@ -6,6 +6,7 @@
   width: 100vw;
   overflow: hidden;
   position: relative;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -20,10 +21,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -53,6 +53,7 @@
   transform: rotate(-45deg);
   overflow: hidden;
   overflow-x: hidden;
+  animation: revealBox 2s;
 }
 #box2 {
   width: 100%;
@@ -64,4 +65,123 @@
   transform: rotate(45deg);
   overflow: hidden;
   overflow-x: hidden;
+  animation: revealBox 2s;
+}
+#box3 {
+  width: 100%;
+  background-color: blue;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: -30%;
+  transform: rotate(45deg);
+  overflow: hidden;
+  overflow-x: hidden;
+  animation: revealBox 2s;
+}
+#box4 {
+  width: 100%;
+  background-color: pink;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: -30%;
+  transform: rotate(-45deg);
+  overflow: hidden;
+  overflow-x: hidden;
+  animation: revealBox 2s;
+}
+#box5 {
+  width: 60%;
+  background-color: yellow;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+  transform: rotate(-45deg);
+  overflow: hidden;
+  overflow-x: hidden;
+  animation: revealBox2 4s;
+}
+#box6 {
+  width: 60%;
+  background-color: indianred;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  transform: rotate(45deg);
+  overflow: hidden;
+  overflow-x: hidden;
+  animation: revealBox2 4s;
+}
+#box7 {
+  width: 60%;
+  background-color: aqua;
+  height: 100px;
+  position: absolute;
+  top: 0%;
+  left: 15%;
+  transform: rotate(-45deg);
+  overflow: hidden;
+  overflow-x: hidden;
+  animation: revealBox2 4s;
+}
+#box8 {
+  width: 60%;
+  background-color: grey;
+  height: 100px;
+  position: absolute;
+  top: 0%;
+  right: 15%;
+  transform: rotate(45deg);
+  overflow: hidden;
+  overflow-x: hidden;
+  animation: revealBox2 4s;
+}
+@keyframes revealBox {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes revealBox2 {
+  0% {
+    width: 0%;
+    display: none;
+  }
+  50% {
+    width: 0%;
+    display: initial;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+
+header::after {
+  content: '';
+  width: 5px;
+  height: 35px;
+  background: #fff;
+  display: inline-block;
+  animation: cursor-blink 1.5s steps(2) infinite;
+}
+#blinker {
+  display: flex;
+  flex-direction: row;
 }
