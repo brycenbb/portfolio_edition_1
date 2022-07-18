@@ -5,6 +5,9 @@ function App() {
     <div className="App">
       {/* <div id="blinker"> */}
       <header className="App-header">Hello, I'm Brycen</header>
+      <h2>
+        <button>Enter</button>
+      </h2>
       {/* </div> */}
       <div id="box"></div>
       <div id="box2"></div>

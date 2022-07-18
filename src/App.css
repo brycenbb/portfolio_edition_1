@@ -4,8 +4,13 @@
 .App {
   text-align: center;
   width: 100vw;
+  height: 100vh;
   overflow: hidden;
   position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   background-color: #282c34;
 }
 
@@ -21,7 +26,7 @@
 }
 
 .App-header {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   /* flex-direction: column; */
   align-items: center;
@@ -53,7 +58,7 @@
   transform: rotate(-45deg);
   overflow: hidden;
   overflow-x: hidden;
-  animation: revealBox 2s;
+  animation: revealBox 1s;
 }
 #box2 {
   width: 100%;
@@ -65,7 +70,7 @@
   transform: rotate(45deg);
   overflow: hidden;
   overflow-x: hidden;
-  animation: revealBox 2s;
+  animation: revealBox 1s;
 }
 #box3 {
   width: 100%;
@@ -77,7 +82,7 @@
   transform: rotate(45deg);
   overflow: hidden;
   overflow-x: hidden;
-  animation: revealBox 2s;
+  animation: revealBox 1s;
 }
 #box4 {
   width: 100%;
@@ -89,7 +94,7 @@
   transform: rotate(-45deg);
   overflow: hidden;
   overflow-x: hidden;
-  animation: revealBox 2s;
+  animation: revealBox 1s;
 }
 #box5 {
   width: 60%;
@@ -101,7 +106,7 @@
   transform: rotate(-45deg);
   overflow: hidden;
   overflow-x: hidden;
-  animation: revealBox2 4s;
+  animation: revealBox2 2s;
 }
 #box6 {
   width: 60%;
@@ -113,7 +118,7 @@
   transform: rotate(45deg);
   overflow: hidden;
   overflow-x: hidden;
-  animation: revealBox2 4s;
+  animation: revealBox2 2s;
 }
 #box7 {
   width: 60%;
@@ -125,7 +130,7 @@
   transform: rotate(-45deg);
   overflow: hidden;
   overflow-x: hidden;
-  animation: revealBox2 4s;
+  animation: revealBox2 2s;
 }
 #box8 {
   width: 60%;
@@ -137,7 +142,7 @@
   transform: rotate(45deg);
   overflow: hidden;
   overflow-x: hidden;
-  animation: revealBox2 4s;
+  animation: revealBox2 2s;
 }
 @keyframes revealBox {
   0% {
@@ -184,4 +189,9 @@ header::after {
 #blinker {
   display: flex;
   flex-direction: row;
+}
+
+button {
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
 }
