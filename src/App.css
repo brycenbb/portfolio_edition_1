@@ -1,5 +1,11 @@
+* {
+  overflow: hidden;
+}
 .App {
   text-align: center;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
 }
 
 .App-logo {
@@ -35,4 +41,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#box {
+  width: 100%;
+  background-color: white;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: -30%;
+  transform: rotate(-45deg);
+  overflow: hidden;
+  overflow-x: hidden;
+}
+#box2 {
+  width: 100%;
+  background-color: red;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: -30%;
+  transform: rotate(45deg);
+  overflow: hidden;
+  overflow-x: hidden;
 }
