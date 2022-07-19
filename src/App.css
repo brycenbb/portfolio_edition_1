@@ -226,18 +226,28 @@ button {
 .App > div:first-child:hover > div:first-child {
   animation: spin 6s linear infinite;
 }
+.App > div:first-child:hover > #name:before {
+  animation: name-change linear forwards 1s;
+}
 .App > div:nth-child(2) {
   flex: 12.5;
   height: 100%;
   background-color: var(--bg);
 }
-
+@keyframes name-change {
+  0% {
+  }
+  100% {
+    font-size: 2.4rem;
+    content: 'Brycen Barron-Borden';
+  }
+}
 @keyframes grow {
   0% {
     flex: 1;
   }
   100% {
-    flex: 1.5;
+    flex: 1.3;
   }
 }
 
@@ -309,4 +319,8 @@ button {
   margin-top: 12rem;
   font-size: 3rem;
   color: var(--dkbg);
+}
+
+#name:before {
+  content: 'B^3';
 }

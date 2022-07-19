@@ -11,9 +11,7 @@ function App() {
           <div className="petalDiag1"></div>
           <div className="petalDiag2"></div>
         </div>
-        <div id="name">
-          {10 > 3 ? <></> : <></>}B<sup>3</sup>
-        </div>
+        <div id="name">{/* B<sup>3</sup> */}</div>
       </div>
       <div></div>
     </div>
