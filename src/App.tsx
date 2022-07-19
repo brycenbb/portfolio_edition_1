@@ -46,7 +46,7 @@ function App() {
         </a>
       </div>
       <div className="right">
-        <div>
+        <div id="container">
           <div>
             <div id="picBox">
               <div id="pic"></div>
