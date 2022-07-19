@@ -126,7 +126,7 @@ button {
 }
 .App > div:nth-child(2) {
   flex: 14 0 auto;
-  height: 200vh;
+  height: 400vh;
   background-color: var(--bg);
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -333,6 +333,15 @@ h3 {
   font-size: 2.5rem;
 }
 
-.container {
-  height: 100%;
+#container {
+  height: 400vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: auto;
+}
+
+#container > div {
+  margin: auto;
+  flex: 1;
 }

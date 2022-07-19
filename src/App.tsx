@@ -48,14 +48,19 @@ function App() {
       <div className="right">
         <div id="container">
           <div>
-            <div id="picBox">
-              <div id="pic"></div>
-            </div>
             <div>
-              <h2>Hi, I'm Brycen</h2>
-              <h3>A Midlands-based Full-Stack Developer</h3>
+              <div id="picBox">
+                <div id="pic"></div>
+              </div>
+              <div>
+                <h2>Hi, I'm Brycen</h2>
+                <h3>A Midlands-based Full-Stack Developer</h3>
+              </div>
             </div>
           </div>
+          <div>1</div>
+          <div>12</div>
+          <div>123</div>
         </div>
       </div>
     </div>
