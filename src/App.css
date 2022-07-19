@@ -209,7 +209,8 @@ button {
 }
 .App > div:first-child {
   /* width: 40%; */
-  flex: 1;
+  flex: 2;
+  min-width: fit-content;
   height: 100%;
   background-color: var(--leaf);
   display: flex;
@@ -220,8 +221,8 @@ button {
 .App > div:first-child:hover {
   animation: grow;
   animation-duration: 1s;
-  animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
+  animation-timing-function: linear;
 }
 
 .App > div:first-child:hover > div:first-child {
@@ -263,10 +264,10 @@ button {
 }
 @keyframes grow {
   0% {
-    flex: 1;
+    flex: 2;
   }
   100% {
-    flex: 1.3;
+    flex: 3.5;
   }
 }
 
@@ -335,7 +336,7 @@ button {
 }
 
 #name {
-  margin-top: 12rem;
+  margin-top: 5rem;
   font-size: 3rem;
   color: var(--dkbg);
   height: 250px;
@@ -392,8 +393,8 @@ a:visited {
 }
 
 #pic {
-  background-image: url('./assets/pic.png');
-  background-position: -100px;
+  background-image: url('./assets/full.JPG');
+  background-position: -1350px;
   background-repeat: no-repeat;
   width: 1500px;
   height: 1500px;
