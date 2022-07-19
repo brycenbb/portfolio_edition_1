@@ -1,12 +1,11 @@
 import './App.css';
 import twitter from './assets/twitter.svg';
 import linked from './assets/linkedin.svg';
-import github from './assets/github.svg';
 import github2 from './assets/github2.svg';
 function App() {
   return (
     <div className="App">
-      <div>
+      <div className="left">
         <div id="flower">
           <div className="flowerCenter"></div>
           <div className="petalFlat"></div>
@@ -46,7 +45,7 @@ function App() {
           GitHub
         </a>
       </div>
-      <div></div>
+      <div className="right"></div>
     </div>
   );
 }
