@@ -47,7 +47,7 @@ function App() {
       </div>
       <div className="right">
         <div id="container">
-          <div>
+          <div className="first">
             <div>
               <div id="picBox">
                 <div id="pic"></div>
@@ -58,9 +58,17 @@ function App() {
               </div>
             </div>
           </div>
-          {/* <div>1</div>
-          <div>12</div>
-          <div>123</div> */}
+          <div className="second">
+            <h3>About</h3>
+            <p>
+              I am to be a graduate of School of Code cohort 12. I recently
+              received my Masters in International Education in Liecester and
+              decided to pursue my passion of tech. I hope to combine technology
+              and education over the course of my career.
+            </p>
+          </div>
+          <div className="third">Projects</div>
+          <div className="fourth">Contact</div>
         </div>
       </div>
     </div>
