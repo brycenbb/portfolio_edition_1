@@ -17,8 +17,6 @@
   align-items: center;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-  /* flex-direction: column; */
-  /* justify-content: center; */
 }
 .App::-webkit-scrollbar {
   display: none;
@@ -44,115 +42,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-#box {
-  width: 100%;
-  background-color: white;
-  height: 100px;
-  position: absolute;
-  top: 0;
-  left: -30%;
-  transform: rotate(-45deg);
-  overflow: hidden;
-  overflow-x: hidden;
-  animation: revealBox 1s;
-}
-#box2 {
-  width: 100%;
-  background-color: red;
-  height: 100px;
-  position: absolute;
-  top: 0;
-  right: -30%;
-  transform: rotate(45deg);
-  overflow: hidden;
-  overflow-x: hidden;
-  animation: revealBox 1s;
-}
-#box3 {
-  width: 100%;
-  background-color: blue;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  left: -30%;
-  transform: rotate(45deg);
-  overflow: hidden;
-  overflow-x: hidden;
-  animation: revealBox 1s;
-}
-#box4 {
-  width: 100%;
-  background-color: pink;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  right: -30%;
-  transform: rotate(-45deg);
-  overflow: hidden;
-  overflow-x: hidden;
-  animation: revealBox 1s;
-}
-#box5 {
-  width: 60%;
-  background-color: yellow;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  right: 15%;
-  transform: rotate(-45deg);
-  overflow: hidden;
-  overflow-x: hidden;
-  animation: revealBox2 2s;
-}
-#box6 {
-  width: 60%;
-  background-color: indianred;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  left: 15%;
-  transform: rotate(45deg);
-  overflow: hidden;
-  overflow-x: hidden;
-  animation: revealBox2 2s;
-}
-#box7 {
-  width: 60%;
-  background-color: aqua;
-  height: 100px;
-  position: absolute;
-  top: 0%;
-  left: 15%;
-  transform: rotate(-45deg);
-  overflow: hidden;
-  overflow-x: hidden;
-  animation: revealBox2 2s;
-}
-#box8 {
-  width: 60%;
-  background-color: grey;
-  height: 100px;
-  position: absolute;
-  top: 0%;
-  right: 15%;
-  transform: rotate(45deg);
-  overflow: hidden;
-  overflow-x: hidden;
-  animation: revealBox2 2s;
-}
 @keyframes revealBox {
   0% {
     width: 0%;
@@ -384,11 +273,6 @@ a,
 a:visited {
   text-decoration: none;
 }
-
-/* #selfie {
-  width: auto;
-  height: auto;
-} */
 
 #picBox {
   width: 300px;
