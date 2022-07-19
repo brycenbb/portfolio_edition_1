@@ -226,7 +226,7 @@ button {
 }
 
 .App > div:first-child:hover > div:first-child {
-  animation: spin 6s linear infinite;
+  animation: spin 8s linear infinite;
 }
 .App > div:first-child:hover > #name > div:first-child::before {
   animation: name-change linear forwards 1s;
@@ -284,9 +284,7 @@ button {
   overflow: visible;
   margin-top: 3rem;
 }
-#flower:hover {
-  animation: spin 6s linear infinite;
-}
+
 #flower > * {
   top: 50%;
   left: 50%;
