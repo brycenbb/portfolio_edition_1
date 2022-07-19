@@ -6,20 +6,17 @@
   --dkbg: #e9bf59;
 }
 
-* {
-  overflow: hidden;
-}
 .App {
   text-align: center;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
   position: relative;
+  overflow-x: hidden;
+
   display: flex;
   align-items: center;
   /* flex-direction: column; */
   /* justify-content: center; */
-  background-color: #282c34;
 }
 
 .App-logo {
@@ -235,9 +232,13 @@ button {
   animation: name-change2 linear forwards 1s;
 }
 .App > div:nth-child(2) {
-  flex: 14;
-  height: 100%;
+  flex: 14 0 auto;
+  height: 200vh;
   background-color: var(--bg);
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  /* height: 200vh; */
+  padding-bottom: 3rem;
 }
 
 .App > div:first-child:hover > .social {
@@ -388,6 +389,7 @@ a:visited {
   border-radius: 50%;
   /* margin-left: 2rem; */
   position: relative;
+  overflow: hidden;
 }
 
 #pic {
