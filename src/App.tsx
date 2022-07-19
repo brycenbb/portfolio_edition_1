@@ -47,8 +47,16 @@ function App() {
         </a>
       </div>
       <div className="right">
-        <div id="picBox">
-          <div id="pic"></div>
+        <div>
+          <div>
+            <div id="picBox">
+              <div id="pic"></div>
+            </div>
+            <div>
+              <h2>Hi, I'm Brycen</h2>
+              <h3>A Full-Stack Developer</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
