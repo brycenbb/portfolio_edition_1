@@ -377,3 +377,28 @@ a,
 a:visited {
   text-decoration: none;
 }
+
+/* #selfie {
+  width: auto;
+  height: auto;
+} */
+
+#picBox {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  /* margin-left: 2rem; */
+  position: relative;
+}
+
+#pic {
+  background-image: url('./assets/pic.png');
+  background-position: -100px;
+  background-repeat: no-repeat;
+  width: 1500px;
+  height: 1500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.2);
+}

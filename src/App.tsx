@@ -2,6 +2,7 @@ import './App.css';
 import twitter from './assets/twitter.svg';
 import linked from './assets/linkedin.svg';
 import github2 from './assets/github2.svg';
+import selfie from './assets/pic.png';
 function App() {
   return (
     <div className="App">
@@ -45,7 +46,11 @@ function App() {
           GitHub
         </a>
       </div>
-      <div className="right"></div>
+      <div className="right">
+        <div id="picBox">
+          <div id="pic"></div>
+        </div>
+      </div>
     </div>
   );
 }
