@@ -3,20 +3,19 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      {/* <div id="blinker"> */}
-      <header className="App-header">Hello, I'm Brycen</header>
-      <h2>
-        <button>Enter</button>
-      </h2>
-      {/* </div> */}
-      <div id="box"></div>
-      <div id="box2"></div>
-      <div id="box3"></div>
-      <div id="box4"></div>
-      <div id="box5"></div>
-      <div id="box6"></div>
-      <div id="box7"></div>
-      <div id="box8"></div>
+      <div>
+        <div id="flower">
+          <div className="flowerCenter"></div>
+          <div className="petalFlat"></div>
+          <div className="petalUp"></div>
+          <div className="petalDiag1"></div>
+          <div className="petalDiag2"></div>
+        </div>
+        <div id="name">
+          {10 > 3 ? <></> : <></>}B<sup>3</sup>
+        </div>
+      </div>
+      <div></div>
     </div>
   );
 }
