@@ -46,6 +46,11 @@ function App() {
         </a>
       </div>
       <div className="right">
+        <nav>
+          <a href="#second">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
         <div id="container">
           <div className="first">
             <div>
@@ -58,7 +63,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="second">
+          <div className="second" id="second">
             <h3>About</h3>
             {/* <p>
               I am to be a graduate of School of Code cohort 12. I recently
@@ -67,8 +72,12 @@ function App() {
               and education over the course of my career.
             </p> */}
           </div>
-          <div className="third">Projects</div>
-          <div className="fourth">Contact</div>
+          <div className="third" id="projects">
+            <h3>Projects</h3>
+          </div>
+          <div className="fourth" id="contact">
+            <h3>Contact</h3>
+          </div>
         </div>
       </div>
     </div>

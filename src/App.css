@@ -306,9 +306,10 @@ a:visited {
 }
 .right {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   overflow: visible;
+  flex-direction: column;
   /* border: 23px solid black; */
 }
 .right > div > div {
@@ -375,4 +376,9 @@ h3 {
 
 .second > p {
   width: 10%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
 }
