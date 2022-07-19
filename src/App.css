@@ -15,10 +15,14 @@
 
   display: flex;
   align-items: center;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   /* flex-direction: column; */
   /* justify-content: center; */
 }
-
+.App::-webkit-scrollbar {
+  display: none;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -240,7 +244,9 @@ button {
   /* height: 200vh; */
   padding-bottom: 3rem;
 }
-
+.App > div:nth-child(2)::-webkit-scrollbar {
+  display: none;
+}
 .App > div:first-child:hover > .social {
   animation: name-show ease-in forwards 1s;
 }
