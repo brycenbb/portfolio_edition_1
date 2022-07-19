@@ -14,7 +14,10 @@ function App() {
           <div className="petalDiag1"></div>
           <div className="petalDiag2"></div>
         </div>
-        <div id="name"></div>
+        <div id="name">
+          <div></div>
+          <div></div>
+        </div>
         <a
           className="social"
           target="_blank"

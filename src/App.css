@@ -227,11 +227,14 @@ button {
 .App > div:first-child:hover > div:first-child {
   animation: spin 6s linear infinite;
 }
-.App > div:first-child:hover > #name:before {
+.App > div:first-child:hover > #name > div:first-child::before {
   animation: name-change linear forwards 1s;
 }
+.App > div:first-child:hover > #name > div:nth-child(2)::before {
+  animation: name-change2 linear forwards 1s;
+}
 .App > div:nth-child(2) {
-  flex: 12.5;
+  flex: 14;
   height: 100%;
   background-color: var(--bg);
 }
@@ -243,8 +246,14 @@ button {
   0% {
   }
   100% {
-    font-size: 2.4rem;
-    content: 'Brycen Barron-Borden';
+    content: 'Brycen';
+  }
+}
+@keyframes name-change2 {
+  0% {
+  }
+  100% {
+    content: 'Barron-Borden';
   }
 }
 @keyframes name-show {
@@ -329,16 +338,24 @@ button {
   margin-top: 12rem;
   font-size: 3rem;
   color: var(--dkbg);
-  height: 200px;
+  height: 250px;
+  margin-bottom: 1rem;
 }
 
-#name:before {
+#name > div:first-child::before {
   content: 'B^3';
+}
+#name > div:nth-child(2)::before {
+  content: '';
+  font-size: 2.4rem;
+  text-align: left;
 }
 
 img {
   width: 40px;
   height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   background-color: var(--flower);
 }
 
