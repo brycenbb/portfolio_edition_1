@@ -1,3 +1,11 @@
+:root {
+  --bg: #fbdd9d;
+  --flower: #e8b12d;
+  --leaf: #4f4e28;
+  --center: #925f17;
+  --dkbg: #e9bf59;
+}
+
 * {
   overflow: hidden;
 }
@@ -9,8 +17,8 @@
   position: relative;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  /* flex-direction: column; */
+  /* justify-content: center; */
   background-color: #282c34;
 }
 
@@ -194,4 +202,178 @@ header::after {
 button {
   font-size: 2rem;
   padding: 1rem 1.5rem;
+}
+
+.App {
+  display: flex;
+}
+.App > div:first-child {
+  /* width: 40%; */
+  flex: 1;
+  height: 100%;
+  background-color: var(--leaf);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.App > div:first-child:hover {
+  animation: grow;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.App > div:first-child:hover > div:first-child {
+  animation: spin 6s linear infinite;
+}
+.App > div:first-child:hover > #name > div:first-child::before {
+  animation: name-change linear forwards 1s;
+}
+.App > div:first-child:hover > #name > div:nth-child(2)::before {
+  animation: name-change2 linear forwards 1s;
+}
+.App > div:nth-child(2) {
+  flex: 14;
+  height: 100%;
+  background-color: var(--bg);
+}
+
+.App > div:first-child:hover > .social {
+  animation: name-show ease-in forwards 1s;
+}
+@keyframes name-change {
+  0% {
+  }
+  100% {
+    content: 'Brycen';
+  }
+}
+@keyframes name-change2 {
+  0% {
+  }
+  100% {
+    content: 'Barron-Borden';
+  }
+}
+@keyframes name-show {
+  100% {
+    color: var(--bg);
+  }
+}
+@keyframes grow {
+  0% {
+    flex: 1;
+  }
+  100% {
+    flex: 1.3;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#flower {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  z-index: 3;
+  overflow: visible;
+  margin-top: 3rem;
+}
+#flower:hover {
+  animation: spin 6s linear infinite;
+}
+#flower > * {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 50%;
+  /* transform: translate(-50%, -50%); */
+}
+.flowerCenter {
+  z-index: 3;
+  width: 50px;
+  height: 50px;
+  background: var(--center);
+  transform: translate(-50%, -50%);
+}
+.petalFlat {
+  background: var(--flower);
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.petalDiag1 {
+  position: absolute;
+
+  background: var(--flower);
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.petalDiag2 {
+  position: absolute;
+  background: var(--flower);
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.petalUp {
+  position: absolute;
+  background: var(--flower);
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+#name {
+  margin-top: 12rem;
+  font-size: 3rem;
+  color: var(--dkbg);
+  height: 250px;
+  margin-bottom: 1rem;
+}
+
+#name > div:first-child::before {
+  content: 'B^3';
+}
+#name > div:nth-child(2)::before {
+  content: '';
+  font-size: 2.4rem;
+  text-align: left;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  background-color: var(--flower);
+}
+
+.social {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  font-size: 1.2rem;
+}
+
+.social:hover {
+  cursor: pointer;
+}
+
+a,
+a:visited {
+  text-decoration: none;
 }
