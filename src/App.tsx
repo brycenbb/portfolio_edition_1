@@ -2,7 +2,6 @@ import './App.css';
 import twitter from './assets/twitter.svg';
 import linked from './assets/linkedin.svg';
 import github2 from './assets/github2.svg';
-import selfie from './assets/pic.png';
 function App() {
   return (
     <div className="App">
@@ -54,7 +53,7 @@ function App() {
             </div>
             <div>
               <h2>Hi, I'm Brycen</h2>
-              <h3>A Full-Stack Developer</h3>
+              <h3>A Midlands-based Full-Stack Developer</h3>
             </div>
           </div>
         </div>
