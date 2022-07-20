@@ -3,6 +3,13 @@ import twitter from './assets/twitter.svg';
 import linked from './assets/linkedin.svg';
 import github2 from './assets/github2.svg';
 function App() {
+  // document.querySelector('#trackerL')?.addEventListener('mouseenter', () => {
+  //   console.log('hi');
+  //   document.querySelector('.left')?.classList.toggle('grow');
+  // });
+  // document.querySelector('#trackerL')?.addEventListener('mouseleave', () => {
+  //   document.querySelector('.left')?.classList.toggle('grow');
+  // });
   return (
     <div className="App">
       <div className="left">
@@ -45,6 +52,7 @@ function App() {
           GitHub
         </a>
       </div>
+
       <div className="right">
         <nav>
           <a href="#about">About</a>
@@ -80,6 +88,10 @@ function App() {
           </div>
         </div>
       </div>
+      {/* <div id="trackerBox">
+        <div id="trackerL"></div>
+        <div id="trackerR"></div>
+      </div> */}
     </div>
   );
 }

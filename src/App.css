@@ -401,3 +401,19 @@ nav {
   position: absolute;
   width: 100%;
 }
+#trackerBox {
+  position: absolute;
+}
+
+#trackerBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#trackerL {
+  flex: 2 1 0;
+}
+#trackerR {
+  flex: 14 1 0;
+}
