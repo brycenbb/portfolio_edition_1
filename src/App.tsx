@@ -2,6 +2,7 @@ import './App.css';
 import twitter from './assets/twitter.svg';
 import linked from './assets/linkedin.svg';
 import github2 from './assets/github2.svg';
+import project1 from './assets/portfolio_project_pic1.png';
 function App() {
   // document.querySelector('#trackerL')?.addEventListener('mouseenter', () => {
   //   console.log('hi');
@@ -61,7 +62,7 @@ function App() {
         </nav>
         <div id="container">
           <div className="first">
-            <div>
+            <div id="intro">
               <div id="picBox">
                 <div id="pic"></div>
               </div>
@@ -82,6 +83,16 @@ function App() {
           </div>
           <div className="third" id="projects">
             <h3>Projects</h3>
+            <div className="project">
+              <div>This will be information about why I did this project</div>
+              <div>
+                <img src={project1}></img>
+                <div className="info">
+                  <div>Live</div>
+                  <div>Github</div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="fourth" id="contact">
             <h3>Contact</h3>
