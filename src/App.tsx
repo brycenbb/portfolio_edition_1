@@ -67,7 +67,7 @@ function App() {
                 <div id="pic"></div>
               </div>
               <div>
-                <h2>Hi, I'm Brycen</h2>
+                <h2>Hi, I'm Brycen!</h2>
                 <h3>A Midlands-based Full-Stack Developer</h3>
               </div>
             </div>
