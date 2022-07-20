@@ -47,7 +47,7 @@ function App() {
       </div>
       <div className="right">
         <nav>
-          <a href="#second">About</a>
+          <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -63,7 +63,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="second" id="second">
+          <div className="about" id="about">
             <h3>About</h3>
             {/* <p>
               I am to be a graduate of School of Code cohort 12. I recently

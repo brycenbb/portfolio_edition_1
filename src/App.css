@@ -4,6 +4,10 @@
   --leaf: #4f4e28;
   --center: #925f17;
   --dkbg: #e9bf59;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
 }
 * {
   box-sizing: border-box;
@@ -310,6 +314,8 @@ a:visited {
   /* align-items: center; */
   overflow: visible;
   flex-direction: column;
+  scroll-behavior: smooth;
+
   /* border: 23px solid black; */
 }
 .right > div > div {
@@ -322,7 +328,7 @@ a:visited {
   display: flex;
   justify-content: center;
   /* border: 1px solid green; */
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .right > div > div > div:last-child {
@@ -381,4 +387,6 @@ h3 {
 nav {
   display: flex;
   justify-content: space-around;
+  position: absolute;
+  width: 100%;
 }
