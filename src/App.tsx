@@ -86,7 +86,10 @@ function App() {
             <div className="project">
               <div>This will be information about why I did this project</div>
               <div>
-                <img src={project1}></img>
+                <img
+                  src={project1}
+                  alt="school of code week long project"
+                ></img>
                 <div className="info">
                   <div>Live</div>
                   <div>Github</div>
