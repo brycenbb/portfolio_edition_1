@@ -65,12 +65,12 @@ function App() {
           </div>
           <div className="about" id="about">
             <h3>About</h3>
-            {/* <p>
+            <p>
               I am to be a graduate of School of Code cohort 12. I recently
               received my Masters in International Education in Liecester and
               decided to pursue my passion of tech. I hope to combine technology
               and education over the course of my career.
-            </p> */}
+            </p>
           </div>
           <div className="third" id="projects">
             <h3>Projects</h3>

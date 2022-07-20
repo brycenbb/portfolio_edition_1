@@ -373,14 +373,14 @@ h3 {
   align-items: center;
 }
 
-.second {
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 20px;
 }
 
-.second > p {
+.about > p {
   width: 10%;
 }
 
