@@ -3,17 +3,15 @@ import twitter from './assets/twitter.svg';
 import linked from './assets/linkedin.svg';
 import github2 from './assets/github2.svg';
 import project1 from './assets/portfolio_project_pic1.png';
+import arrow from './assets/arrow.svg';
 function App() {
-  // document.querySelector('#trackerL')?.addEventListener('mouseenter', () => {
-  //   console.log('hi');
-  //   document.querySelector('.left')?.classList.toggle('grow');
-  // });
-  // document.querySelector('#trackerL')?.addEventListener('mouseleave', () => {
-  //   document.querySelector('.left')?.classList.toggle('grow');
-  // });
-
   function handleClick(input: string) {
     document.getElementById(`${input}`)!.scrollIntoView(true);
+  }
+  function takeToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.getElementById('navbar')!.scrollIntoView(true);
   }
   return (
     <div className="App">
@@ -59,7 +57,7 @@ function App() {
       </div>
 
       <div className="right">
-        <nav>
+        <nav id="navbar">
           <button
             onClick={() => {
               handleClick('about');
@@ -81,6 +79,10 @@ function App() {
           >
             Contact
           </button>
+          <div onClick={takeToTop}>
+            <img src={arrow} alt="Back to top"></img>
+            <div>Back to top</div>
+          </div>
         </nav>
         <div id="container">
           <div className="first">
