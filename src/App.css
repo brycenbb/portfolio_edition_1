@@ -381,6 +381,7 @@ nav > a {
   margin-top: 1rem;
   margin-bottom: 0;
   display: flex;
+  transform: scale(1.5);
 }
 #intro > div:nth-child(2) {
   text-align: center;
@@ -413,6 +414,7 @@ p {
 }
 #container > .first {
   height: 80vh;
+  /* transform: scale(1.5); */
 }
 /* 
 #container > div:first-child {
@@ -452,7 +454,7 @@ p {
   /* flex-direction: column; */
   align-items: center;
   font-size: 1.5rem;
-  max-width: 70%;
+  max-width: 80%;
   gap: 2rem;
 }
 
@@ -484,6 +486,7 @@ p {
   font-size: 2rem;
 }
 nav {
+  margin-top: 2rem;
   display: flex;
   justify-content: space-around;
   position: absolute;
