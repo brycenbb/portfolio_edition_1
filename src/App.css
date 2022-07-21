@@ -135,10 +135,12 @@ header::after {
   gap: 1rem;
 }
 .App > div:first-child:hover {
-  animation: grow;
+  /* animation: grow;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation-timing-function: linear; */
+  flex: 3.5;
+  transition: 1s linear;
 }
 
 .App > div:first-child:hover > div:first-child {
@@ -202,10 +204,12 @@ header::after {
 }
 
 .App > div:first-child {
-  animation: shrink;
+  /* animation: shrink;
   animation-duration: 0.3s;
 
-  animation-timing-function: linear;
+  animation-timing-function: linear; */
+  flex: 2;
+  transition: 0.5s linear;
 }
 @keyframes spin {
   100% {
