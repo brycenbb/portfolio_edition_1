@@ -11,6 +11,10 @@ function App() {
   // document.querySelector('#trackerL')?.addEventListener('mouseleave', () => {
   //   document.querySelector('.left')?.classList.toggle('grow');
   // });
+
+  function handleClick(input: string) {
+    document.getElementById(`${input}`)!.scrollIntoView(true);
+  }
   return (
     <div className="App">
       <div className="left">
@@ -56,7 +60,27 @@ function App() {
 
       <div className="right">
         <nav>
-          <a href="#about">About</a>
+          <button
+            onClick={() => {
+              handleClick('about');
+            }}
+          >
+            About
+          </button>
+          <button
+            onClick={() => {
+              handleClick('projects');
+            }}
+          >
+            Projects
+          </button>
+          <button
+            onClick={() => {
+              handleClick('contact');
+            }}
+          >
+            Contact
+          </button>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -67,7 +91,7 @@ function App() {
                 <div id="pic"></div>
               </div>
               <div>
-                <h2>Hi, I'm Brycen</h2>
+                <h2>Hi, I'm Brycen!</h2>
                 <h3>A Midlands-based Full-Stack Developer</h3>
               </div>
             </div>

@@ -14,6 +14,7 @@ html {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 .App {
   text-align: center;
@@ -364,6 +365,12 @@ nav > a {
   margin-left: 1rem;
   margin-top: 1rem;
   margin-bottom: 0;
+  display: flex;
+}
+#intro > div:nth-child(2) {
+  text-align: center;
+  align-self: center;
+  width: 25rem;
 }
 h2 {
   font-size: 3rem;
