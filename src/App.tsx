@@ -81,8 +81,6 @@ function App() {
           >
             Contact
           </button>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
         </nav>
         <div id="container">
           <div className="first">
