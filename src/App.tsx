@@ -108,9 +108,13 @@ function App() {
             <div className="project">
               <p>
                 This full-stack application was developed as part of a week long
-                4 person project as part of School of Code.
+                4 person project as part of School of Code using the Agile
+                methodology.
               </p>
               <div>
+                <div>
+                  <em>Don't Panic</em>
+                </div>
                 <img
                   src={project1}
                   alt="school of code week long project"
