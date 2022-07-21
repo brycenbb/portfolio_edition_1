@@ -84,7 +84,10 @@ function App() {
           <div className="third" id="projects">
             <h3>Projects</h3>
             <div className="project">
-              <div>This will be information about why I did this project</div>
+              <p>
+                This full-stack application was developed as part of a week long
+                4 person project as part of School of Code.
+              </p>
               <div>
                 <img
                   src={project1}
