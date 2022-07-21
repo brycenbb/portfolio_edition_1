@@ -95,7 +95,7 @@ function App() {
             </div>
           </div>
           <div className="about" id="about">
-            <h3>About</h3>
+            <h3>About Me</h3>
             <p>
               I am to be a graduate of School of Code cohort 12. I recently
               received my Masters in International Education in Liecester and
@@ -106,13 +106,19 @@ function App() {
           <div className="third" id="projects">
             <h3>Projects</h3>
             <div className="project">
-              <p>
-                This full-stack application was developed as part of a week long
-                4 person project as part of School of Code using the Agile
-                methodology.
-              </p>
-              <div>
+              <div className="brief">
+                <p>
+                  This full-stack application was developed as part of a week
+                  long 4 person project as part of School of Code using the
+                  Agile methodology.
+                </p>
                 <div>
+                  React, Auth0, React router, PostgreSQL, MaterialUI, Jest,
+                  Supertest, Crypress, Netlify
+                </div>
+              </div>
+              <div>
+                <div className="projectName">
                   <em>Don't Panic</em>
                 </div>
                 <img
@@ -120,8 +126,20 @@ function App() {
                   alt="school of code week long project"
                 ></img>
                 <div className="info">
-                  <div>Live</div>
-                  <div>Github</div>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://frabjous-bonbon-a6e839.netlify.app/"
+                  >
+                    Live
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://github.com/brycenbb/SOCweekproject-frontend"
+                  >
+                    Github
+                  </a>
                 </div>
               </div>
             </div>
