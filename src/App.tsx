@@ -109,8 +109,8 @@ function App() {
               <div className="brief">
                 <p>
                   This full-stack application was developed as part of a week
-                  long 4 person project as part of School of Code using the
-                  Agile methodology.
+                  long 4 person project as part of School of Code using Agile
+                  methodology.
                 </p>
                 <div>
                   React, Auth0, React router, PostgreSQL, MaterialUI, Jest,
