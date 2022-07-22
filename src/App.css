@@ -462,3 +462,10 @@ nav > div {
   bottom: 0;
   right: 0;
 }
+
+#topButton {
+  margin: 2rem;
+  font-weight: bold;
+  transform: scale(1.2);
+  cursor: pointer;
+}
