@@ -4,7 +4,24 @@ import linked from './assets/linkedin.svg';
 import github2 from './assets/github2.svg';
 import project1 from './assets/portfolio_project_pic1.png';
 import arrow from './assets/arrow.svg';
+import { useEffect } from 'react';
 function App() {
+  useEffect(() => {
+    console.log('hi');
+    window.addEventListener('scroll', toggleVisible);
+
+    return () => {
+      window.removeEventListener('scroll', toggleVisible);
+    };
+  }, []);
+  function handleScroll(e: React.UIEvent<HTMLDivElement, UIEvent>) {
+    console.log(e);
+  }
+  function toggleVisible() {
+    console.log('hi');
+
+    console.log(window.pageYOffset);
+  }
   function handleClick(input: string) {
     document.getElementById(`${input}`)!.scrollIntoView(true);
   }
@@ -56,7 +73,12 @@ function App() {
         </a>
       </div>
 
-      <div className="right">
+      <div
+        className="right"
+        onScroll={(e) => {
+          handleScroll(e);
+        }}
+      >
         <nav id="navbar">
           <button
             onClick={() => {
@@ -79,7 +101,7 @@ function App() {
           >
             Contact
           </button>
-          <div onClick={takeToTop}>
+          <div id="topButton" onClick={takeToTop}>
             <img src={arrow} alt="Back to top"></img>
             <div>Back to top</div>
           </div>
