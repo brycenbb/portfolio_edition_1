@@ -8,19 +8,25 @@ import { useEffect } from 'react';
 function App() {
   useEffect(() => {
     console.log('hi');
-    window.addEventListener('scroll', toggleVisible);
+    document.querySelector('#container')!.addEventListener('scroll', () => {
+      console.log('bug');
+    });
 
     return () => {
       window.removeEventListener('scroll', toggleVisible);
     };
   }, []);
   function handleScroll(e: React.UIEvent<HTMLDivElement, UIEvent>) {
-    console.log(e);
+    // console.log(e);
+    console.log(
+      window.pageYOffset,
+      window.screenY,
+      window.scrollY,
+      document.querySelector('.first')!.scrollTop
+    );
   }
   function toggleVisible() {
-    console.log('hi');
-
-    console.log(window.pageYOffset);
+    console.log('ayo');
   }
   function handleClick(input: string) {
     document.getElementById(`${input}`)!.scrollIntoView(true);
@@ -31,7 +37,7 @@ function App() {
     document.getElementById('navbar')!.scrollIntoView(true);
   }
   return (
-    <div className="App">
+    <div className="App" onScroll={handleScroll}>
       <div className="left">
         <div id="flower">
           <div className="flowerCenter"></div>
@@ -73,12 +79,7 @@ function App() {
         </a>
       </div>
 
-      <div
-        className="right"
-        onScroll={(e) => {
-          handleScroll(e);
-        }}
-      >
+      <div className="right" onScroll={handleScroll}>
         <nav id="navbar">
           <button
             onClick={() => {
@@ -106,8 +107,8 @@ function App() {
             <div>Back to top</div>
           </div>
         </nav>
-        <div id="container">
-          <div className="first">
+        <div id="container" onScroll={handleScroll}>
+          <div className="first" onScroll={handleScroll}>
             <div id="intro">
               <div id="picBox">
                 <div id="pic"></div>
