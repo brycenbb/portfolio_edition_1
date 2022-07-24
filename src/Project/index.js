@@ -15,7 +15,7 @@ function Project() {
     }
     Fetch();
   }, []);
-
+  //TODO: make a component for the images so that clicking will cycle through them :)
   return (
     <>
       {project.map((item, index) => {
