@@ -5,6 +5,7 @@ import github2 from './assets/github2.svg';
 import project1 from './assets/portfolio_project_pic1.png';
 import arrow from './assets/arrow.svg';
 function App() {
+  //add useeffect
   function handleClick(input: string) {
     document.getElementById(`${input}`)!.scrollIntoView(true);
   }
