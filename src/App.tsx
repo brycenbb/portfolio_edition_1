@@ -5,6 +5,7 @@ import github2 from './assets/github2.svg';
 // import project1 from './assets/portfolio_project_pic1.png';
 import arrow from './assets/arrow.svg';
 import Project from './Project';
+import Form from './Form';
 function App() {
   function handleClick(input: string) {
     document.getElementById(`${input}`)!.scrollIntoView(true);
@@ -118,6 +119,7 @@ function App() {
           </div>
           <div className="fourth" id="contact">
             <h3>Contact</h3>
+            <Form></Form>
           </div>
         </div>
       </div>
