@@ -2,7 +2,7 @@ import './App.css';
 import twitter from './assets/twitter.svg';
 import linked from './assets/linkedin.svg';
 import github2 from './assets/github2.svg';
-import project1 from './assets/portfolio_project_pic1.png';
+// import project1 from './assets/portfolio_project_pic1.png';
 import arrow from './assets/arrow.svg';
 import Project from './Project';
 function App() {
@@ -100,53 +100,21 @@ function App() {
           <div className="about" id="about">
             <h3>About Me</h3>
             <p>
-              I am to be a graduate of School of Code cohort 12. I recently
-              received my Masters in International Education in Liecester and
-              decided to pursue my passion of tech. I hope to combine technology
-              and education over the course of my career.
+              Hi, I’m Brycen. My love for learning, technology, and community
+              brought me to School of Code to develop industry-ready skills and
+              a wonderful network of fellow coders and tech enthusiasts. I’ve
+              also brought my passion as a researcher with me to assist my data
+              driven approach to developing projects I love and that matter. I
+              hail from California but have come to find my new home in
+              Leicester. When I’m not coding I am either traveling, practicing
+              gymnastics, or relaxing with friends and family, so if you want to
+              find me, you can do so online or at tech events across the
+              Midlands!
             </p>
           </div>
           <div className="third" id="projects">
             <h3>Projects</h3>
             <Project></Project>
-            <div className="project">
-              <div className="brief">
-                <p>
-                  This full-stack application was developed as part of a week
-                  long 4 person project as part of School of Code using Agile
-                  methodology.
-                </p>
-                <div>
-                  React, Auth0, React router, PostgreSQL, MaterialUI, Jest,
-                  Supertest, Crypress, Netlify
-                </div>
-              </div>
-              <div>
-                <div className="projectName">
-                  <em>Don't Panic</em>
-                </div>
-                <img
-                  src={project1}
-                  alt="school of code week long project"
-                ></img>
-                <div className="info">
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://frabjous-bonbon-a6e839.netlify.app/"
-                  >
-                    Live
-                  </a>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://github.com/brycenbb/SOCweekproject-frontend"
-                  >
-                    Github
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
           <div className="fourth" id="contact">
             <h3>Contact</h3>
