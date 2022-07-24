@@ -4,6 +4,7 @@ import linked from './assets/linkedin.svg';
 import github2 from './assets/github2.svg';
 import project1 from './assets/portfolio_project_pic1.png';
 import arrow from './assets/arrow.svg';
+import Project from './Project';
 function App() {
   function handleClick(input: string) {
     document.getElementById(`${input}`)!.scrollIntoView(true);
@@ -107,6 +108,7 @@ function App() {
           </div>
           <div className="third" id="projects">
             <h3>Projects</h3>
+            <Project></Project>
             <div className="project">
               <div className="brief">
                 <p>
