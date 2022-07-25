@@ -123,10 +123,6 @@ function App() {
           </div>
         </div>
       </div>
-      {/* <div id="trackerBox">
-        <div id="trackerL"></div>
-        <div id="trackerR"></div>
-      </div> */}
     </div>
   );
 }
