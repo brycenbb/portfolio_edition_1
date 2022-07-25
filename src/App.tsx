@@ -119,6 +119,7 @@ function App() {
           </div>
           <div className="fourth" id="contact">
             <h3>Contact</h3>
+            <h4>Send me a message!</h4>
             <Form></Form>
           </div>
         </div>
