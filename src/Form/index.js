@@ -11,11 +11,11 @@ function Form() {
     >
       <input type="hidden" name="form-name" value="contact" />
       <p>
-        <label>Your Name:</label>
+        <label>Full Name:</label>
         <input type="text" name="name" />
       </p>
       <p>
-        <label>Your Email:</label>
+        <label>Email:</label>
         <input type="email" name="email" />
       </p>
       <p>
