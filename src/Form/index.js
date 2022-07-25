@@ -1,4 +1,5 @@
 //Form to be used in the Contact Me section
+//test
 function Form() {
   return (
     <form
@@ -6,9 +7,6 @@ function Form() {
       name="contact"
       method="POST"
       data-netlify="true"
-      // onSubmit={(e) => {
-      //     handleSubmit(e);
-      // }}
       onSubmit="submit"
     >
       <input type="hidden" name="form-name" value="contact" />
@@ -19,15 +17,6 @@ function Form() {
       <p>
         <label>Your Email:</label>
         <input type="email" name="email" />
-      </p>
-      <p>
-        <label>
-          Your Role:{' '}
-          <select name="role[]" multiple>
-            <option value="leader">Leader</option>
-            <option value="follower">Follower</option>
-          </select>
-        </label>
       </p>
       <p>
         <label>Message:</label>
