@@ -425,8 +425,11 @@ p {
   align-items: center;
 }
 .project > div:nth-child(2) > img {
+  height: fit-content;
   width: 80%;
-  height: 500px;
+  max-width: 80%;
+  max-height: fit-content;
+  object-fit: contain;
   margin-left: 1rem;
   border: 4px solid var(--leaf);
   border-radius: 30px;

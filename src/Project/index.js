@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
+import Image from '../Image';
 // var contentful = require('contentful');
 import * as contentful from 'contentful';
 function Project() {
   const [project, setProject] = useState([]);
+
   useEffect(() => {
     async function Fetch() {
       const client = contentful.createClient({
@@ -29,10 +31,11 @@ function Project() {
               <div className="projectName">
                 <em> {item.fields.projectTitle}</em>
               </div>
-              <img
-                alt="school of code week long project"
+              <Image imageArr={item.fields.images}></Image>
+              {/* <img
+                alt="project array"
                 src={item.fields.images[0].fields.file.url}
-              ></img>
+              ></img> */}
               <div className="info">
                 <a target="_blank" rel="noreferrer" href={item.fields.live}>
                   Live

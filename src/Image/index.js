@@ -1,0 +1,19 @@
+import { useState } from 'react';
+
+function Image({ imageArr }) {
+  const [currImage, setImage] = useState(0);
+
+  function nextImage() {
+    setImage((currImage + 1) % imageArr.length);
+  }
+
+  return (
+    <img
+      src={imageArr[currImage].fields.file.url}
+      onClick={nextImage}
+      alt="project array"
+    ></img>
+  );
+}
+
+export default Image;
