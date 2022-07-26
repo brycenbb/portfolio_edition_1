@@ -6,6 +6,7 @@ import github2 from './assets/github2.svg';
 import arrow from './assets/arrow.svg';
 import Project from './Project';
 import Form from './Form';
+import SwitchLabels from './Switch';
 function App() {
   function handleClick(input: string) {
     document.getElementById(`${input}`)!.scrollIntoView(true);
@@ -59,6 +60,7 @@ function App() {
       </div>
 
       <div className="right">
+        <SwitchLabels></SwitchLabels>
         <nav id="navbar">
           <button
             onClick={() => {
