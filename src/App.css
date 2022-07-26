@@ -503,3 +503,12 @@ textarea {
   resize: vertical;
   font-size: 1.2rem;
 }
+
+.imageHover {
+  cursor: pointer;
+}
+
+.imageHover:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}

@@ -32,10 +32,7 @@ function Project() {
                 <em> {item.fields.projectTitle}</em>
               </div>
               <Image imageArr={item.fields.images}></Image>
-              {/* <img
-                alt="project array"
-                src={item.fields.images[0].fields.file.url}
-              ></img> */}
+
               <div className="info">
                 <a target="_blank" rel="noreferrer" href={item.fields.live}>
                   Live

@@ -9,6 +9,7 @@ function Image({ imageArr }) {
 
   return (
     <img
+      className={imageArr.length > 1 ? 'imageHover' : ''}
       src={imageArr[currImage].fields.file.url}
       onClick={nextImage}
       alt="project array"
