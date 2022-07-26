@@ -41,8 +41,8 @@ button:hover {
   display: flex;
   overflow-y: scroll;
   /* align-items: center; */
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  /* -ms-overflow-style: none; 
+  scrollbar-width: none;  */
 }
 
 .smooth {
