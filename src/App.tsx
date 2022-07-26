@@ -109,7 +109,7 @@ function App() {
               also brought my passion as a researcher with me to assist my data
               driven approach to developing projects I love and that matter. I
               hail from California but have come to find my new home in
-              Leicester. When I’m not coding I am either traveling, practicing
+              Leicester. When I’m not coding I am either travelling, practising
               gymnastics, or relaxing with friends and family, so if you want to
               find me, you can do so online or at tech events across the
               Midlands!
