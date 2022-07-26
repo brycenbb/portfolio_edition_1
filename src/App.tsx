@@ -7,7 +7,9 @@ import arrow from './assets/arrow.svg';
 import Project from './Project';
 import Form from './Form';
 import SwitchLabels from './Switch';
+import { useState } from 'react';
 function App() {
+  const [smooth, setSmooth] = useState(true);
   function handleClick(input: string) {
     document.getElementById(`${input}`)!.scrollIntoView(true);
   }
@@ -17,7 +19,7 @@ function App() {
     document.getElementById('navbar')!.scrollIntoView(true);
   }
   return (
-    <div className="App">
+    <div className={smooth ? 'App smooth' : 'App'}>
       <div className="left">
         <div id="flower">
           <div className="flowerCenter"></div>
@@ -60,7 +62,7 @@ function App() {
       </div>
 
       <div className="right">
-        <SwitchLabels></SwitchLabels>
+        <SwitchLabels smooth={smooth} setSmooth={setSmooth}></SwitchLabels>
         <nav id="navbar">
           <button
             onClick={() => {

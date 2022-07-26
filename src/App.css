@@ -4,16 +4,14 @@
   --leaf: #4f4e28;
   --center: #925f17;
   --dkbg: #e9bf59;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
-html {
-  scroll-behavior: smooth;
-}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   overscroll-behavior: none;
 }
 button {
@@ -37,12 +35,18 @@ button:hover {
   height: 100vh;
   position: relative;
   /* overflow-x: hidden; */
+  /* scroll-behavior: smooth; */
+
   /* border: 10px solid blue; */
   display: flex;
   overflow-y: scroll;
   /* align-items: center; */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+.smooth {
+  scroll-behavior: smooth;
 }
 .App::-webkit-scrollbar {
   display: none;
