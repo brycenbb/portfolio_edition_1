@@ -308,13 +308,14 @@ nav > a {
   align-self: flex-start;
   height: auto;
   top: 0;
+  z-index: 100;
 }
 .right {
   display: flex;
   /* justify-content: center; */
   /* align-items: center; */
   overflow: visible;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   flex-direction: column;
   scroll-behavior: smooth;
   position: relative;
