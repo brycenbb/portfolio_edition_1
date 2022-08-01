@@ -115,52 +115,55 @@ function App() {
                 <h3>A Midlands-based Full-Stack Developer</h3>
               </div>
             </div>
-            <h3 id="skills">Skills</h3>
-            <div className="skills">
-              <div>
-                <img src={html} alt="html"></img>HTML
-              </div>
-              <div>
-                <img src={css} alt="css"></img>CSS
-              </div>
-              <div>
-                <img src={js} alt="javascript"></img>JavaScript
-              </div>
-              <div>
-                <img src={react} alt="react"></img>React
-              </div>
-              <div>
-                <img src={node} alt="node"></img> Node
-              </div>
-              <div>
-                <img src={mui} alt="mui"></img> Material UI
-              </div>
-              <div>
-                <img src={sql} alt="sql"></img> SQL
-              </div>
-              <div>
-                <img src={jest} alt="jest"></img>Jest
-              </div>
-              <div>
-                <img src={cypress} alt="cypress"></img>Cypress
-              </div>
-              <div>
-                <img src={heroku} alt="heroku"></img>Heroku
-              </div>
-              <div>
-                <img src={netlify} alt="netlify"></img>Netlify
-              </div>
-              <div>
-                <img src={typescript} alt="typescript"></img>TypeScript
-              </div>
-              <div>
-                <img src={contentful} alt="contentful"></img>Contentful
-              </div>
-              <div>
-                <img src={git} alt="git"></img>Git
-              </div>
-              <div>
-                <img src={github} alt="github"></img> Github
+            {/* <h3 id="skills">Skills</h3> */}
+            <div className="skill-box">
+              <div className="skillName">Skills</div>
+              <div className="skills">
+                <div>
+                  <img src={html} alt="html"></img>HTML
+                </div>
+                <div>
+                  <img src={css} alt="css"></img>CSS
+                </div>
+                <div>
+                  <img src={js} alt="javascript"></img>JavaScript
+                </div>
+                <div>
+                  <img src={react} alt="react"></img>React
+                </div>
+                <div>
+                  <img src={node} alt="node"></img> Node
+                </div>
+                <div>
+                  <img src={mui} alt="mui"></img> Material UI
+                </div>
+                <div>
+                  <img src={sql} alt="sql"></img> SQL
+                </div>
+                <div>
+                  <img src={jest} alt="jest"></img>Jest
+                </div>
+                <div>
+                  <img src={cypress} alt="cypress"></img>Cypress
+                </div>
+                <div>
+                  <img src={heroku} alt="heroku"></img>Heroku
+                </div>
+                <div>
+                  <img src={netlify} alt="netlify"></img>Netlify
+                </div>
+                <div>
+                  <img src={typescript} alt="typescript"></img>TypeScript
+                </div>
+                <div>
+                  <img src={contentful} alt="contentful"></img>Contentful
+                </div>
+                <div>
+                  <img src={git} alt="git"></img>Git
+                </div>
+                <div>
+                  <img src={github} alt="github"></img> Github
+                </div>
               </div>
             </div>
           </div>

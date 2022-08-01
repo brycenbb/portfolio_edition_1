@@ -347,6 +347,7 @@ nav > a {
   margin-bottom: 0;
   display: flex;
   transform: scale(1.2);
+  padding-top: 5rem;
 }
 #intro > div:nth-child(2) {
   text-align: center;
@@ -377,7 +378,7 @@ p {
 }
 #container > .first {
   height: 150vh;
-
+  justify-content: space-around;
   /* transform: scale(1.5); */
 }
 #container > #projects {
@@ -522,20 +523,35 @@ textarea {
 }
 
 .skills {
-  width: 50%;
+  width: 100%;
   font-weight: bold;
   display: flex;
   gap: 30px;
+
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  /* transform: scale(1.2); */
 }
 
-.skills > div {
+.skill {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.skills > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .skills > div > img {
   background-color: transparent;
 }
@@ -543,4 +559,10 @@ textarea {
 #skills {
   font-weight: bold;
   margin-top: 2rem;
+}
+
+.skillName {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
