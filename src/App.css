@@ -539,3 +539,8 @@ textarea {
 .skills > div > img {
   background-color: transparent;
 }
+
+#skills {
+  font-weight: bold;
+  margin-top: 2rem;
+}
