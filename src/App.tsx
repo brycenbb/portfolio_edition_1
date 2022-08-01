@@ -2,7 +2,9 @@ import './App.css';
 import twitter from './assets/twitter.svg';
 import linked from './assets/linkedin.svg';
 import github2 from './assets/github2.svg';
-// import project1 from './assets/portfolio_project_pic1.png';
+import html from './assets/html.png';
+import css from './assets/css.png';
+import js from './assets/js.png';
 import arrow from './assets/arrow.svg';
 import Project from './Project';
 import Form from './Form';
@@ -101,7 +103,30 @@ function App() {
                 <h3>A Midlands-based Full-Stack Developer</h3>
               </div>
             </div>
-            <div className="skills">Skills</div>
+            <div className="skills">
+              <div>
+                HTML <img src={html} alt="html"></img>
+              </div>
+              <div>
+                CSS<img src={css} alt="css"></img>
+              </div>
+              <div>
+                JavaScript<img src={js} alt="css"></img>
+              </div>
+              <div>React</div>
+              <div>Node</div>
+              <div>Express</div>
+              <div>Material UI</div>
+              <div>SQL</div>
+              <div>Jest</div>
+              <div>Cypress</div>
+              <div>Heroku</div>
+              <div>Netlify</div>
+              <div>TypeScript</div>
+              <div>Contentful</div>
+              <div>Git</div>
+              <div>Github</div>
+            </div>
           </div>
           <div className="about" id="about">
             <h3>About Me</h3>
