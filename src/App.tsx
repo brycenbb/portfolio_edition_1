@@ -101,6 +101,7 @@ function App() {
                 <h3>A Midlands-based Full-Stack Developer</h3>
               </div>
             </div>
+            <div className="skills">Skills</div>
           </div>
           <div className="about" id="about">
             <h3>About Me</h3>

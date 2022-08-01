@@ -377,6 +377,7 @@ p {
 }
 #container > .first {
   height: 100vh;
+
   /* transform: scale(1.5); */
 }
 #container > #projects {
@@ -392,6 +393,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 .about,
