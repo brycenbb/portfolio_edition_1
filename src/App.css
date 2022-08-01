@@ -459,8 +459,13 @@ p {
   width: 30%;
 }
 .brief > div {
-  font-style: italic;
+  margin-top: 0.5rem;
+  /* font-style: italic; */
   font-size: 1.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .projectName {
   font-size: 2rem;
