@@ -274,7 +274,7 @@ img {
 
 a,
 a:visited {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--leaf);
   font-weight: 700;
   font-size: 2rem;
@@ -421,7 +421,7 @@ p {
   width: 100%;
 }
 .info > a {
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 .info > a:hover {
   color: var(--center);
@@ -486,17 +486,21 @@ nav {
   position: absolute;
   width: 100%;
 }
-nav > div {
+/* nav > div {
   position: fixed;
   bottom: 0;
   right: 0;
-}
+} */
 
 #topButton {
   margin: 2rem;
   font-weight: bold;
-  transform: scale(1.2);
+  font-size: 1.5rem;
+  /* transform: scale(1.2); */
   cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 #formSubmit {

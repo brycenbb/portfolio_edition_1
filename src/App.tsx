@@ -32,6 +32,12 @@ function App() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     document.getElementById('navbar')!.scrollIntoView(true);
   }
+  // useEffect(() => {
+  //   console.log('in effect');
+  //   window.addEventListener('scroll', () => {
+  //     console.log('scrolling');
+  //   });
+  // });
   return (
     <main className={smooth ? 'App smooth' : 'App'}>
       <section className="left">
@@ -99,10 +105,10 @@ function App() {
           >
             Contact
           </button>
-          <div id="topButton" role="button" onClick={takeToTop}>
+          <button id="topButton" onClick={takeToTop}>
             <img src={arrow} alt="Back to top"></img>
             <div>Back to top</div>
-          </div>
+          </button>
         </nav>
         <section id="container">
           <div className="first">
@@ -115,7 +121,6 @@ function App() {
                 <h3>A Midlands-based Full-Stack Developer</h3>
               </div>
             </div>
-            {/* <h3 id="skills">Skills</h3> */}
           </div>
           <section className="about" id="about">
             <h3>About Me</h3>
@@ -132,7 +137,7 @@ function App() {
               Midlands!
             </p>
             <div className="skill-box">
-              <div className="skillName">My Skills</div>
+              <div className="skillName">My Tech Skills</div>
               <div className="skills">
                 <div>
                   <img src={html} alt="html"></img>HTML
