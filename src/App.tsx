@@ -33,8 +33,8 @@ function App() {
     document.getElementById('navbar')!.scrollIntoView(true);
   }
   return (
-    <div className={smooth ? 'App smooth' : 'App'}>
-      <div className="left">
+    <main className={smooth ? 'App smooth' : 'App'}>
+      <section className="left">
         <div id="flower">
           <div className="flowerCenter"></div>
           <div className="petalFlat"></div>
@@ -73,9 +73,9 @@ function App() {
           <img src={github2} alt="Github icon"></img>
           GitHub
         </a>
-      </div>
+      </section>
 
-      <div className="right">
+      <section className="right">
         <SwitchLabels smooth={smooth} setSmooth={setSmooth}></SwitchLabels>
         <nav id="navbar">
           <button
@@ -99,12 +99,12 @@ function App() {
           >
             Contact
           </button>
-          <div id="topButton" onClick={takeToTop}>
+          <div id="topButton" role="button" onClick={takeToTop}>
             <img src={arrow} alt="Back to top"></img>
             <div>Back to top</div>
           </div>
         </nav>
-        <div id="container">
+        <section id="container">
           <div className="first">
             <div id="intro">
               <div id="picBox">
@@ -116,8 +116,23 @@ function App() {
               </div>
             </div>
             {/* <h3 id="skills">Skills</h3> */}
+          </div>
+          <section className="about" id="about">
+            <h3>About Me</h3>
+            <p>
+              Hi, I’m Brycen. My love for learning, technology, and community
+              brought me to School of Code to develop industry-ready skills and
+              a wonderful network of fellow coders and tech enthusiasts. I’ve
+              also brought my passion as a researcher with me to assist my data
+              driven approach to developing projects I love and that matter. I
+              hail from California but have come to find my new home in
+              Leicester. When I’m not coding I am either travelling, practising
+              gymnastics, or relaxing with friends and family, so if you want to
+              find me, you can do so online or at tech events across the
+              Midlands!
+            </p>
             <div className="skill-box">
-              <div className="skillName">Skills</div>
+              <div className="skillName">My Skills</div>
               <div className="skills">
                 <div>
                   <img src={html} alt="html"></img>HTML
@@ -162,38 +177,23 @@ function App() {
                   <img src={git} alt="git"></img>Git
                 </div>
                 <div>
-                  <img src={github} alt="github"></img> Github
+                  <img src={github} alt="github"></img> GitHub
                 </div>
               </div>
             </div>
-          </div>
-          <div className="about" id="about">
-            <h3>About Me</h3>
-            <p>
-              Hi, I’m Brycen. My love for learning, technology, and community
-              brought me to School of Code to develop industry-ready skills and
-              a wonderful network of fellow coders and tech enthusiasts. I’ve
-              also brought my passion as a researcher with me to assist my data
-              driven approach to developing projects I love and that matter. I
-              hail from California but have come to find my new home in
-              Leicester. When I’m not coding I am either travelling, practising
-              gymnastics, or relaxing with friends and family, so if you want to
-              find me, you can do so online or at tech events across the
-              Midlands!
-            </p>
-          </div>
-          <div className="third" id="projects">
+          </section>
+          <section className="third" id="projects">
             <h3>Projects</h3>
             <Project></Project>
-          </div>
-          <div className="fourth" id="contact">
+          </section>
+          <section className="fourth" id="contact">
             <h3>Contact</h3>
             <h4>Send me a message!</h4>
             <Form></Form>
-          </div>
-        </div>
-      </div>
-    </div>
+          </section>
+        </section>
+      </section>
+    </main>
   );
 }
 

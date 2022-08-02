@@ -13,7 +13,6 @@ function Project() {
       });
       let res = await client.getEntries();
       setProject(res.items);
-      console.log('hi', res);
     }
     Fetch();
   }, []);
@@ -22,7 +21,7 @@ function Project() {
     <>
       {project.map((item, index) => {
         return (
-          <div className="project" key={index}>
+          <article className="project" key={index}>
             <div className="brief">
               <p>{item.fields.overview}</p>
               <div>{item.fields.tools}</div>
@@ -38,11 +37,11 @@ function Project() {
                   Live
                 </a>
                 <a target="_blank" rel="noreferrer" href={item.fields.source}>
-                  Github
+                  GitHub
                 </a>
               </div>
             </div>
-          </div>
+          </article>
         );
       })}
     </>
