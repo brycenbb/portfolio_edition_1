@@ -12,7 +12,7 @@ function Image({ imageArr }) {
       className={imageArr.length > 1 ? 'imageHover' : ''}
       src={imageArr[currImage].fields.file.url}
       onClick={nextImage}
-      alt="project array"
+      alt="Single or multiple screenshots of the live app to get a quick understanding of how it looks"
     ></img>
   );
 }

@@ -2,24 +2,18 @@
 //test
 function Form() {
   return (
-    <form
-      id="formSubmit"
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      onSubmit="submit"
-    >
+    <form id="formSubmit" name="contact" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="contact" />
       <p>
-        <label>Full Name:</label>
+        <label htmlFor="name">Full Name:</label>
         <input type="text" name="name" required />
       </p>
       <p>
-        <label>Email:</label>
+        <label htmlFor="email">Email:</label>
         <input type="email" name="email" required />
       </p>
       <p>
-        <label>Message:</label>
+        <label htmlFor="message">Message:</label>
         <textarea name="message" required></textarea>
       </p>
       <p>
