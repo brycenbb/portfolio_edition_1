@@ -4,14 +4,12 @@
   --leaf: #4f4e28;
   --center: #925f17;
   --dkbg: #e9bf59;
-  /* scroll-behavior: smooth; */
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* scroll-behavior: smooth; */
   overscroll-behavior: none;
 }
 button {
@@ -23,7 +21,7 @@ button {
   width: max-content;
   height: max-content;
   padding: 0;
-  font-size: 2rem;
+  font-size: 1.5em;
   margin: 0;
 }
 button:hover {
@@ -109,6 +107,7 @@ header {
 .App {
   display: flex;
 }
+
 .App > section:first-child {
   /* width: 40%; */
   flex: 2;
@@ -585,4 +584,57 @@ textarea {
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+  .App > section:first-child {
+    /* flex: 1; */
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0rem;
+    position: unset;
+  }
+  #name {
+    display: none;
+  }
+  #flower {
+    margin: 0;
+  }
+  .social {
+    margin: 0;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+  }
+  #intro {
+    max-width: 80%;
+    padding: 0;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #container > .first {
+    height: 70vh;
+    padding-top: 5rem;
+  }
+  #about > p {
+    max-width: 80%;
+  }
+  .skill-box {
+    max-width: 70%;
+    width: 70%;
+  }
+  .project {
+    flex-direction: column-reverse;
+  }
+  .project > .brief {
+    width: 70%;
+  }
 }
