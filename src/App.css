@@ -419,6 +419,9 @@ p {
 #container > #projects {
   height: fit-content;
 }
+#projects > h3 {
+  font-size: min(11vw, 2.5rem);
+}
 /* 
 #container > div:first-child {
   top: 0;
@@ -456,7 +459,7 @@ p {
   width: 100%;
 }
 .info > a {
-  font-size: 2.3rem;
+  font-size: min(7vw, 2.3rem);
 }
 .info > a:hover {
   color: var(--center);
@@ -494,7 +497,7 @@ p {
 .project > div > p {
   max-width: 100%;
   height: 65%;
-  font-size: 1.5rem;
+  font-size: min(5vw, 1.5rem);
   text-align: left;
 }
 .brief {
@@ -530,7 +533,7 @@ nav {
 #topButton {
   margin: 2rem;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: min(3vw, 1.5rem);
   /* transform: scale(1.2); */
   cursor: pointer;
   position: fixed;
@@ -546,7 +549,7 @@ nav {
   gap: 1rem;
 }
 form {
-  width: 30%;
+  width: max(30%, 55vw);
   background-color: var(--dkbg);
   border: 4px solid var(--leaf);
   border-radius: 10px;
@@ -665,19 +668,22 @@ textarea {
   }
   #about > p {
     max-width: 80%;
+    font-size: min(6vw, 1rem);
   }
   #about > h3 {
     font-size: min(11vw, 2.5rem);
   }
   .skill-box {
-    max-width: 70%;
-    width: 70%;
+    max-width: 80%;
+    width: 80%;
   }
   .project {
     flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
   }
   .project > .brief {
-    width: 70%;
+    width: 80%;
   }
   #intro {
     width: 100%;
