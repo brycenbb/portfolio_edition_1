@@ -384,15 +384,15 @@ nav > a {
 #intro > div:nth-child(2) {
   text-align: center;
   align-self: center;
-  width: 25rem;
+  width: min(80vw, 25rem);
 }
 h2 {
-  font-size: 3rem;
-  font-size: min(6vw, 3rem);
+  font-size: min(11vw, 3rem);
+  max-width: 100%;
 }
 h3 {
-  font-size: 2.5rem;
-  font-size: min(5vw, 2.5rem);
+  font-size: min(6vw, 2.5rem);
+  max-width: 100%;
 }
 p {
   max-width: 60%;
@@ -414,6 +414,7 @@ p {
   height: 100vh;
   justify-content: space-around;
   /* transform: scale(1.5); */
+  max-width: 100%;
 }
 #container > #projects {
   height: fit-content;
@@ -628,6 +629,7 @@ textarea {
   }
   .App > section:first-child {
     /* flex: 1; */
+    max-width: 100%;
     width: 100%;
 
     display: flex;
@@ -655,6 +657,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: none;
   }
   #container > .first {
     height: 70vh;
@@ -662,6 +665,9 @@ textarea {
   }
   #about > p {
     max-width: 80%;
+  }
+  #about > h3 {
+    font-size: min(11vw, 2.5rem);
   }
   .skill-box {
     max-width: 70%;
@@ -682,8 +688,18 @@ textarea {
 @media only screen and (max-width: 700px) {
   #intro {
     flex-direction: column;
+    transform: none;
+    max-width: 100%;
   }
   #picBox {
     display: none;
+  }
+  .App > section:first-child {
+    max-width: 100%;
+    width: 100%;
+  }
+  h3,
+  h2 {
+    text-align: center;
   }
 }
