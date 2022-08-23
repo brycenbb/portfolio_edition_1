@@ -199,6 +199,8 @@ header {
   height: 50px;
   width: 8vw;
   height: 8vw;
+  width: min(8vw, 50px);
+  height: min(8vw, 50px);
   background: var(--center);
   transform: translate(-50%, -50%);
 }
@@ -209,6 +211,8 @@ header {
   height: 50px;
   width: 17vw;
   height: 9vw;
+  width: min(17vw, 100px);
+  height: min(9vw, 50px);
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
@@ -220,6 +224,8 @@ header {
   height: 50px;
   width: 17vw;
   height: 9vw;
+  width: min(17vw, 100px);
+  height: min(9vw, 50px);
   border-radius: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
 }
@@ -230,6 +236,8 @@ header {
   height: 50px;
   width: 17vw;
   height: 9vw;
+  width: min(17vw, 100px);
+  height: min(9vw, 50px);
   border-radius: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
@@ -240,6 +248,8 @@ header {
   height: 50px;
   width: 17vw;
   height: 9vw;
+  width: min(17vw, 100px);
+  height: min(9vw, 50px);
   border-radius: 50%;
   transform: translate(-50%, -50%) rotate(90deg);
 }
