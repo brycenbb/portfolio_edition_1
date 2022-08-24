@@ -708,4 +708,8 @@ textarea {
   h2 {
     text-align: center;
   }
+  .right {
+    overflow: visible;
+    height: fit-content;
+  }
 }
