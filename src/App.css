@@ -460,9 +460,10 @@ p {
   align-items: center;
 }
 .project > div:nth-child(2) > img {
-  height: fit-content;
+  height: 70%;
+  max-height: 60%;
   width: 80%;
-  max-width: 80%;
+  /* max-width: 80%; */
   max-height: fit-content;
   object-fit: contain;
   margin-left: 1rem;
